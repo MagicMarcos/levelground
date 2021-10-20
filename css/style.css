@@ -1,0 +1,264 @@
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+/* .bodyContainer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	max-width: 1300px;
+	text-align: center;
+	border: 3px solid green;
+} */
+
+a {
+	color: rgb(243, 243, 243);
+	text-decoration: none;
+}
+
+.bodyBtn {
+	background: none;
+	border: 1px solid darkgray;
+	padding: 15px;
+	width: 200px;
+	margin-top: 20px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+	background: rgb(102, 118, 138);
+	max-width: 103rem;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	font-size: 1.5rem;
+}
+header div {
+	width: 33.3333%;
+}
+
+.logo {
+	text-align: center;
+}
+
+.donateBtnCont {
+	text-align: right;
+}
+
+.donateBtn {
+	background: rgb(243, 243, 243);
+	color: rgb(102, 118, 138);
+	padding: 10px 15px 10px 15px;
+	border-radius: 5px;
+	border: none;
+	margin-right: 10px;
+}
+
+.classHiring:first-child {
+	margin-left: 10px;
+}
+
+.classHiring a {
+	padding-right: 3%;
+}
+
+.mainContainer {
+	background: rgb(102, 118, 138);
+	height: fit-content;
+	padding: 0 10px 30px 10px;
+}
+
+.mainActionCont {
+	margin: auto;
+	max-width: 85rem;
+	font-size: 2.8rem;
+	text-align: center;
+	color: rgb(243, 243, 243);
+}
+
+.mainActionCont p {
+	font-size: 2.7rem;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+.playVid {
+	font-weight: 300;
+	font-size: 2.4rem;
+}
+
+.playVid i {
+	font-size: 3rem;
+}
+/* !why */
+
+.salesVolunteerContainer {
+	margin: auto;
+	max-width: 50rem;
+	font-size: 2rem;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.salesVolunteerContainer p {
+	font-size: 1.8rem;
+}
+
+.salesPitch .vonlunteer {
+	background: rgb(243, 243, 243);
+}
+
+.salesPitch {
+	display: flex;
+	align-items: center;
+	height: 35rem;
+}
+
+.salesVolunteerContainer h2 {
+	margin-top: 0;
+}
+
+/* !visit */
+
+.callToAction {
+	background: rgb(219, 223, 226);
+}
+
+.visitCont {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: black;
+	height: 55rem;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.visit {
+	font-size: 1.7rem;
+	max-width: 38.5rem;
+}
+
+.visit p {
+	font-size: 1.7rem;
+}
+/* !volunteer */
+.volunteer {
+	display: flex;
+	align-items: center;
+	height: 45rem;
+}
+
+/* !footer */
+
+footer {
+	background: rgb(22, 31, 42);
+	color: rgb(219, 223, 226);
+	padding: 30px 10px 30px 10px;
+}
+
+.footCont {
+	max-width: 103rem;
+	margin: auto;
+
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.5rem;
+}
+
+.socials i {
+	font-size: 2.5rem;
+	margin-right: 20px;
+}
+
+address {
+	font-style: normal;
+	font-weight: 300;
+}
+
+address a {
+	font-weight: 400;
+}
+
+.footCont:last-child {
+	margin-top: 25px;
+	border-top: 1px solid rgb(219, 223, 226);
+}
+
+.siteMap h5 {
+	color: rgb(102, 118, 138);
+	margin-bottom: 5px;
+}
+
+.siteMap a {
+	margin-right: 10px;
+}
+
+.footCont img {
+	margin-top: 8px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (max-width: 811px) {
+	.visitCont {
+		display: flex;
+		flex-direction: column;
+		height: fit-content;
+		padding-bottom: 30px;
+	}
+
+	.visit {
+		margin-top: 30px;
+	}
+
+	footer {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.orgInfo {
+		padding-right: 15px;
+	}
+}
+
+@media screen and (max-width: 10x) {
+	body {
+		background: lightgray;
+	}
+}
+
+@media screen and (max-width: 1px) {
+	body {
+		background: gray;
+	}
+}
